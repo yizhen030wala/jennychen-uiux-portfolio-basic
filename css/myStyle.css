@@ -1,0 +1,56 @@
+/* 修改全域 scrollbar 寬度、圓角、背景顏色 */
+/* 在全域設定 */
+*::-webkit-scrollbar {
+    width: 10px;
+    /* scrollbar 寬度 */
+    border-radius: 8px;
+    /* 圓角 */
+    background-color: transparent;
+    /* 背景顏色 */
+}
+
+/* 修改全域 scrollbar 輪廓 */
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+    /* 圓角 */
+}
+
+/* 修改全域 scrollbar 滾動條 */
+*::-webkit-scrollbar-thumb {
+    background-color: #919191;
+    /* 滾動條顏色 */
+    border-radius: 5px;
+    /* 圓角 */
+}
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #636363;
+    /* 滾動條顏色 */
+    border-radius: 5px;
+    /* 圓角 */
+}
+
+/* 修改全域 scrollbar 上下按鈕 */
+*::-webkit-scrollbar-button {
+    background-color: transparent;
+    /* 上下按鈕背景顏色 */
+}
+
+/* ==============loading-animation================ */
+
+/* 初始隱藏動畫元素 */
+.loading-animation {
+    color: white;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%); /* 從下方位移 */
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .loading-animation.show {
+    transform: translate(-50%, -50%) translateY(0); /* 顯示動畫 */
+    opacity: 1;
+  }
+  
