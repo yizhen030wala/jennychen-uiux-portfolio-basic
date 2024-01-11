@@ -1,7 +1,7 @@
 /* 修改全域 scrollbar 寬度、圓角、背景顏色 */
 /* 在全域設定 */
 *::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
     /* scrollbar 寬度 */
     border-radius: 8px;
     /* 圓角 */
@@ -17,7 +17,13 @@
 
 /* 修改全域 scrollbar 滾動條 */
 *::-webkit-scrollbar-thumb {
-    background-color: #888;
+    background-color: #919191;
+    /* 滾動條顏色 */
+    border-radius: 5px;
+    /* 圓角 */
+}
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #636363;
     /* 滾動條顏色 */
     border-radius: 5px;
     /* 圓角 */
