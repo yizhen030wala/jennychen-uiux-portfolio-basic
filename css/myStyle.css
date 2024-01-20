@@ -52,12 +52,20 @@
   .loading-animation.show {
     transform: translate(-50%, -50%) translateY(0); /* 顯示動畫 */
     opacity: 1;
+    
   }
   
-/* 
+
 @media (max-width: 809px) {
     .framer-o3eoja{
         display: none;
     }
-  } */
-  
+    .framer-Uo6Ax.framer-5p59wc{
+        /* border-radius: 20px; */
+        min-height: 400px;
+
+      }
+    
+  }
+
+ 
