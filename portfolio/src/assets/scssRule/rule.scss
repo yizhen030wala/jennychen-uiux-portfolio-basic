@@ -1,54 +1,54 @@
 // ====================================================色彩設定====================================================
-$color_green1: #3D9D35; //primary
-$color_green2: #006D3B;
-$color_green3: #B8EB35;
-$color_blue: #81E6FD;
-$color_yellow: #FFDF06;
-$color_red: #EB5757;
-$color_gray1: #828282;
-$color_gray2: #E7E7E7;
-$color_gray3: #F5F5F5;
-$color_black: #333333;
 $color_white: #FFFFFF;
+$color_gray: #F5F5F5;
+$color_deep_gray1: #4A4A4A;
+$color_deep_gray2: #333333;
+$color_black: #1C1B1F;
 
 // ====================================================字體設定====================================================
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+TC:wght@100..900&display=swap');
 
 // ----------------------------------------------------desktop字體
 @mixin h1_desktop {
-    font-weight: 300;
-    font-size: 64px;
+    font-weight: 600;
+    font-size: 72px;
     margin: 0px;
 }
 
 @mixin h2_desktop {
-    font-weight: 600;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 40px;
     margin: 0px;
 }
 
 @mixin h3_desktop {
     font-weight: 500;
+    font-size: 32px;
+    margin: 0px;
+}
+
+@mixin h4_desktop {
+    font-weight: 300;
     font-size: 24px;
     margin: 0px;
 }
 
 //----------------------------------------------------phone字體
 @mixin h1_phone {
-    font-weight: 300;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 50px;
     margin: 0px;
 }
 
 @mixin h2_phone {
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 32px;
     margin: 0px;
 }
 
 @mixin h3_phone {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 24px;
     margin: 0px;
 }
 
@@ -77,7 +77,7 @@ $color_white: #FFFFFF;
     padding: 8px 20px;
     border-radius: 20px;
     color: $color-white;
-    background-color: $color-green1;
+    background-color: $color-gray;
     border: none;
     font-size: 16px;
     font-weight: 500;
@@ -87,12 +87,12 @@ $color_white: #FFFFFF;
 
     &:hover {
         cursor: pointer;
-        background-color: $color_green3;
+        background-color: $color_deep_gray1;
         color: $color-black;
     }
 
     &:focus {
-        background-color: $color-green2;
+        background-color: $color_deep_gray1;
         color: $color-white;
     }
 }
