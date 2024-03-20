@@ -157,6 +157,12 @@ $border_radius_20px: 20px;
     text-align: center;
 }
 
+// @include showFlex_row;
+// @include showFlex_column;
+// @include center;
+// @include row-center;
+// @include itemCenter;
+
 // ====================================================icon樣式設定====================================================
 @mixin icon_20px {
     @include size(20px, 20px);

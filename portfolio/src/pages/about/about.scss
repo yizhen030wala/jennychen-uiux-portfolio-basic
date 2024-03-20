@@ -2,41 +2,113 @@
 @import "../../assets/scssRule/rule.scss";
 
 // ===============================================
-h2 {}
+
+
+.intro,
+.skills,
+.work_tools,
+.speak,
+.experiences {
+    width: 70%;
+}
+
+.skills,
+.work_tools,
+.speak {
+    border-bottom: 1px solid black;
+    padding: 2rem 0rem;
+}
 
 main {
-    .intro {
-        .left {}
+    background-image: url('../../assets/images/bg-4.png');
+    background-size: cover;
+    @include center;
+    gap: 3rem;
+    padding-top: 10vh;
+    padding: 10vh 2vh;
 
-        .right {
-            p {}
+    h2 {
+        @include h3_desktop;
+        font-size: 1.8rem;
+    }
+
+    .intro {
+        @include center;
+        @include size(100%, 100vh);
+        
+        .wrap {
+            @include row-center;
+            @include size(70%, 70vh);
+
+            .left {
+                width: 40%;
+                height: 100%;
+                background-color: red;
+            }
+
+            .right {
+                @include showFlex_column;
+                width: 60%;
+                gap: 1.2rem;
+                padding: 1rem 2rem;
+
+                p {
+                    line-height: 2;
+                    font-size: 1.2rem;
+                }
+            }
         }
+
     }
 
     .skills {
+        @include showFlex_column;
+
         .skills_wrap {
+            @include row-center;
+
             .skill {}
         }
     }
 
-    .tools {
+    .work_tools {
+        @include showFlex_column;
+
         .tools_wrap {
-            .tools {}
+
+            .tools {
+                @include row-center;
+
+            }
         }
     }
 
     .speak {
-        .lauange {
-            h4 {}
+        @include showFlex_column;
+
+        .speak_wrap {
+            @include row-center;
+            justify-content: space-between;
+
+            .lauange {
+                h4 {}
+            }
         }
+
     }
 
     // experiences
     .experiences {
+        @include showFlex_column;
+        gap: 3rem;
 
         // work_wrap
         .work_wrap {
+            @include showFlex_column;
+            gap: 3rem;
+
             .work {
+
                 .A {
                     img {}
 
@@ -46,6 +118,9 @@ main {
                 .b {
                     .top {
                         .title {
+                            @include row-center;
+                            justify-content: start;
+
                             h3 {}
 
                             h4 {}
@@ -65,8 +140,10 @@ main {
             }
         }
 
-        // 2024_wrap
-        .2024_wrap {
+        // 2023_wrap
+        .lastYear {
+            @include showFlex_column;
+            gap: 3rem;
 
             .korea,
             .frontEnd {
@@ -79,6 +156,9 @@ main {
                 .content {}
             }
         }
+
+
+
     }
 }
 
@@ -101,15 +181,17 @@ main {
             }
         }
 
-        .tools {
+        .work_tools {
             .tools_wrap {
                 .tools {}
             }
         }
 
         .speak {
-            .lauange {
-                h4 {}
+            .speak_wrap {
+                .lauange {
+                    h4 {}
+                }
             }
         }
 
@@ -148,7 +230,7 @@ main {
             }
 
             // 2024_wrap
-            .2023 {
+            .lastYear {
 
                 .korea,
                 .frontEnd {

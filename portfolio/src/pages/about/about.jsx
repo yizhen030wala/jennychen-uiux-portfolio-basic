@@ -9,17 +9,20 @@ const about = () => {
             <Header />
             <main>
                 <div className="intro">
-                    <div className="left"><img src="" alt="" /></div>
-                    <div className="right">
-                        <h2>Hello，我是 Jenny，很高興認識你！</h2>
-                        <p>我是一位擅長插畫，並時常觀察生活中的細節美感的設計師。<br></br>
+                    <div className="wrap">
+                        <div className="left"><img src="" alt="" /></div>
+                        <div className="right">
+                            <h2>Hello，我是 Jenny，很高興認識你！</h2>
+                            <p>我是一位擅長插畫，並時常觀察生活中的細節美感的設計師。<br></br>
 
-                            我擁有多元的設計能力，並熟悉多個設計軟體，期望能以使用/觀看者為中心去思考問題，讓設計的作品更發揮最大的價值與效益。<br></br>
+                                我擁有多元的設計能力，並熟悉多個設計軟體，期望能以使用/觀看者為中心去思考問題，讓設計的作品更發揮最大的價值與效益。<br></br>
 
-                            在實習中前輩們肯定我的製圖能力與時程管理；一起製作專題的同學朋友們則肯定我的創意發想能力、執行力與創造力。<br></br>
+                                在實習中前輩們肯定我的製圖能力與時程管理；一起製作專題的同學朋友們則肯定我的創意發想能力、執行力與創造力。<br></br>
 
-                            短期內希望設計思考的能力更精進、視覺設計上更加善用行銷技巧，並利用多餘時間學習新技能。未來則希望能持續學習，增加軟、硬實力，拓展思維與眼界。</p>
+                                短期內希望設計思考的能力更精進、視覺設計上更加善用行銷技巧，並利用多餘時間學習新技能。未來則希望能持續學習，增加軟、硬實力，拓展思維與眼界。</p>
+                        </div>
                     </div>
+
                 </div>
                 <div className="skills">
                     <h2>我的技能</h2>
@@ -33,7 +36,7 @@ const about = () => {
                         <div className="skill">網頁前端技術(HTML/CSS)</div>
                     </div>
                 </div>
-                <div className="tools">
+                <div className="work_tools">
                     <h2>我創作的工具</h2>
                     <div className="tools_wrap">
                         <div className="tools"><img src="" alt="" /></div>
@@ -51,18 +54,21 @@ const about = () => {
                 </div>
                 <div className="speak">
                     <h2>我會說的語言</h2>
-                    <div className="lauange">
-                        <h2>TW 中文(繁體)</h2>
-                        <h4>母語</h4>
+                    <div className="speak_wrap">
+                        <div className="lauange">
+                            <h2>TW 中文(繁體)</h2>
+                            <h4>母語</h4>
+                        </div>
+                        <div className="lauange">
+                            <h2>EN 英文</h2>
+                            <h4>TOEIC 795,TOFEL 72</h4>
+                        </div>
+                        <div className="lauange">
+                            <h2>KR 韓語</h2>
+                            <h4>中階</h4>
+                        </div>
                     </div>
-                    <div className="lauange">
-                        <h2>EN 英文</h2>
-                        <h4>TOEIC 795,TOFEL 72</h4>
-                    </div>
-                    <div className="lauange">
-                        <h2>KR 韓語</h2>
-                        <h4>中階</h4>
-                    </div>
+
                 </div>
                 {/* 經歷 */}
                 <div className="experiences">
@@ -134,7 +140,7 @@ const about = () => {
                         </div>
                     </div>
                     {/* 2024 */}
-                    <div className="2023">
+                    <div className="lastYear">
                         <div className="korea">
                             <figure><img src="" alt="" /></figure>
                             <div className="text">
