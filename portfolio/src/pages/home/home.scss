@@ -1,0 +1,108 @@
+@import "../../assets/scssRule/all.scss";
+@import "../../assets/scssRule/rule.scss";
+
+// ===================RWD============================
+
+// 手機
+@media screen and (max-width: 850px) {}
+
+// ===============================================
+main {
+    .hero {
+        @include size(100%, 100vh);
+        background-image: url('../../assets/images/bg-1.png');
+        background-size: cover;
+        background-position: bottom;
+        padding-top: 10vh;
+        padding: 0vh 20vh;
+        @include center;
+
+        .wrap {
+            @include showFlex_column;
+            gap: 55px;
+
+            .text_wrap {
+                h1 {
+                    @include h1_desktop;
+                    color: $color-white;
+                }
+
+                figure {
+                    width: 893px;
+                }
+            }
+
+            .btn_wrap {
+                @include showFlex_row;
+                gap: 20px;
+
+                .btn_black {
+                    @include text_btn_big;
+                }
+
+                .btn_white {
+                    @include row-center;
+                    gap: 5px;
+                    @include text_btn_big;
+                    color: $color_deep_gray2;
+                    background-color: $color-white;
+
+                    &:hover {
+                        color: $color_deep_gray2;
+                        background-color: $color-gray;
+                    }
+
+                    &:focus {
+                        color: $color_deep_gray2;
+                        background-color: $color-gray;
+                    }
+
+                    img {
+                        @include size(36px, 36px);
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+    .works {
+        background-image: url('../../assets/images/bg - 2.png');
+        // background-size: 100%;
+        background-position: top;
+        padding-top: 10vh;
+        padding: 0vh 20vh;
+        @include center;
+        .title {
+            img {}
+        }
+
+        .cotainer {
+            .card {
+                .left {
+                    img {}
+                }
+
+                .right {
+                    .info_top {
+                        h4 {
+                            // @include
+                        }
+
+                        h1 {
+                            // @include
+                        }
+
+                        .tag_wrap {
+                            .tag {}
+                        }
+                    }
+
+                    .info_btn {}
+                }
+            }
+        }
+    }
+}

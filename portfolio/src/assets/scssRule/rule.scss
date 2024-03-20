@@ -76,10 +76,10 @@ $color_black: #1C1B1F;
     font-family: Noto Sans TC;
     padding: 8px 20px;
     border-radius: 20px;
-    color: $color-white;
-    background-color: $color-gray;
+    color: $color-gray;
+    background-color: $color_deep_gray2 ;
     border: none;
-    font-size: 16px;
+    font-size: 36px;
     font-weight: 500;
     line-height: 150%;
     letter-spacing: 0.5px;
@@ -88,12 +88,10 @@ $color_black: #1C1B1F;
     &:hover {
         cursor: pointer;
         background-color: $color_deep_gray1;
-        color: $color-black;
     }
 
     &:focus {
         background-color: $color_deep_gray1;
-        color: $color-white;
     }
 }
 
