@@ -2,9 +2,11 @@
 import React from 'react'
 import Header from '../../../public/nav/nav'
 import './home.scss'
+import Footer from '../../../public/footer/footer'
+
 
 //img
-import TextDesk from '../../assets/images/textDesk.png'
+// import TextDesk from '../../assets/images/textDesk.png'
 import Download from '../../assets/icon/download.svg'
 import title from '../../assets/images/titleWorks.png'
 import RETO from '../../assets/images/viewsonic/viewsonic_01.png'
@@ -19,9 +21,11 @@ const index = () => {
             <div className="text_wrap">
               <h1>
                 Hi ! I’m Jenny!<br></br>
-                A Graphic/Visual Designer
+                A UIUX/Visual Designer
               </h1>
-              <figure><img src={TextDesk} alt="" /></figure>
+              <figure>
+                {/* <img src={TextDesk} alt="" /> */}
+                </figure>
             </div>
             <div className="btn_wrap">
               <button className="btn_black">關於我</button>
@@ -106,7 +110,7 @@ const index = () => {
           </div>
         </div>
       </main>
-
+      <Footer/>
     </>
   )
 }

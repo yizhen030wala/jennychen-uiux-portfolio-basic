@@ -1,10 +1,7 @@
 @import "../../assets/scssRule/all.scss";
 @import "../../assets/scssRule/rule.scss";
 
-// ===================RWD============================
-
-// 手機
-@media screen and (max-width: 850px) {}
+// 
 
 // ===============================================
 main {
@@ -28,7 +25,10 @@ main {
                 }
 
                 figure {
-                    width: 893px;
+                    // width: 100%;
+                    background-image: url('../../assets/images/textDesk.png');
+                    height: 80px;
+                    background-size: cover;
                 }
             }
 
@@ -69,38 +69,172 @@ main {
     }
 
     .works {
-        background-image: url('../../assets/images/bg - 2.png');
+        background-image: url('../../assets/images/bg-2.png');
         // background-size: 100%;
         background-position: top;
-        padding-top: 10vh;
-        padding: 0vh 20vh;
+        background-size: cover;
+        padding: 10vh 20vh;
         @include center;
+
         .title {
-            img {}
+            margin: 50px 0px;
+
+            img {
+                height: 135px;
+            }
         }
 
-        .cotainer {
+        .container {
+            @include showFlex_column;
+            gap: 10vh;
+
             .card {
+                overflow: hidden;
+                @include size(100%, 80vh);
+                @include showFlex_row;
+                background-color: $color-white;
+                border-radius: $border_radius_20px;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+
                 .left {
-                    img {}
+                    width: 60% ;
+                    overflow: hidden;
+                    height: 100%;
+                    img {
+                        object-fit: cover;
+                        height: 100%;
+                    }
                 }
 
                 .right {
+                    @include showFlex_column;
+                    width: 40%;
+                    padding: 40px;
+                    justify-content: space-between;
+
                     .info_top {
+                        @include showFlex_column;
+                        gap: 10px;
+
                         h4 {
-                            // @include
+                            @include h4_desktop;
+                            font-weight: 350;
                         }
 
                         h1 {
-                            // @include
+                            @include h2_desktop;
                         }
 
                         .tag_wrap {
-                            .tag {}
+                            display: flex;
+                            gap: 10px;
+
+                            .tag {
+                                font-size: 14px;
+                                padding: 10px 20px;
+                                background-color: $color-gray;
+                                color: $color_deep_gray2;
+                                border-radius: $border_radius_10px
+                            }
                         }
                     }
 
-                    .info_btn {}
+                    .info_btn {
+                        @include text_btn_big;
+                        border-radius: $border_radius_10px;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//===================RWD============================
+
+// 手機
+@media screen and (max-width: 1024px) {
+    main {
+        .hero {
+            padding: 50px 16px !important;
+            
+            .wrap {
+                .text_wrap {
+                    h1 {
+                        @include h1_phone;
+                    }
+
+                    figure {
+                        background-image: url('../../assets/images/textPhone.png');
+                        background-size: cover;
+                        height: 12vh;
+                        
+                        
+                    }
+
+                }
+
+                .btn_wrap {
+                    flex-direction: column;
+
+                    .btn_black {
+                        font-size: 24px;
+                    }
+
+                    .btn_white {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        .works {
+            padding: 50px 16px;
+
+            .title {
+                // min-width: 21px;
+                width: 250px;
+                min-height: 75px;
+                @include itemCenter;
+
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+        }
+
+        .container {
+            .card {
+                flex-direction: column !important;
+
+                .left {
+                    width: 100% !important;
+                    height: 40% !important;
+                }
+
+                .right {
+                    width: 100% !important;
+                    height: 60%;
+
+                    .info_top {
+                        h4 {
+                            @include h2_phone;
+                        }
+
+                        h1 {
+                            @include h3_phone;
+                        }
+
+                        .tag_wrap {
+                            display: none !important;
+                        }
+                    }
+
                 }
             }
         }

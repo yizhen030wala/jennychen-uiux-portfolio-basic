@@ -1,0 +1,166 @@
+@import "../../assets/scssRule/all.scss";
+@import "../../assets/scssRule/rule.scss";
+
+// ===============================================
+h2 {}
+
+main {
+    .intro {
+        .left {}
+
+        .right {
+            p {}
+        }
+    }
+
+    .skills {
+        .skills_wrap {
+            .skill {}
+        }
+    }
+
+    .tools {
+        .tools_wrap {
+            .tools {}
+        }
+    }
+
+    .speak {
+        .lauange {
+            h4 {}
+        }
+    }
+
+    // experiences
+    .experiences {
+
+        // work_wrap
+        .work_wrap {
+            .work {
+                .A {
+                    img {}
+
+                    .line {}
+                }
+
+                .b {
+                    .top {
+                        .title {
+                            h3 {}
+
+                            h4 {}
+                        }
+
+                        .day {}
+                    }
+
+                    .bottom {
+                        font-size: 24px;
+                    }
+                }
+
+                .c {
+                    img {}
+                }
+            }
+        }
+
+        // 2024_wrap
+        .2024_wrap {
+
+            .korea,
+            .frontEnd {
+                figure {}
+
+                .text {
+                    h4 {}
+                }
+
+                .content {}
+            }
+        }
+    }
+}
+
+// =================RWD==============================
+@media screen and (max-width: 1024px) {
+    h2 {}
+
+    main {
+        .intro {
+            .left {}
+
+            .right {
+                p {}
+            }
+        }
+
+        .skills {
+            .skills_wrap {
+                .skill {}
+            }
+        }
+
+        .tools {
+            .tools_wrap {
+                .tools {}
+            }
+        }
+
+        .speak {
+            .lauange {
+                h4 {}
+            }
+        }
+
+        // experiences
+        .experiences {
+
+            // work_wrap
+            .work_wrap {
+                .work {
+                    .A {
+                        img {}
+
+                        .line {}
+                    }
+
+                    .b {
+                        .top {
+                            .title {
+                                h3 {}
+
+                                h4 {}
+                            }
+
+                            .day {}
+                        }
+
+                        .bottom {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .c {
+                        img {}
+                    }
+                }
+            }
+
+            // 2024_wrap
+            .2023 {
+
+                .korea,
+                .frontEnd {
+                    figure {}
+
+                    .text {
+                        h4 {}
+                    }
+
+                    .content {}
+                }
+            }
+        }
+    }
+}
