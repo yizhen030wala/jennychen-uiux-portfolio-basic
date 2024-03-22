@@ -6,6 +6,7 @@ import './nav.scss'
 import Menu from '../../src/assets/icon/menu.svg'
 // import UnLogin from '../ShowUnlogin/ShowUnlogin.jsx'
 // import Download from '../../src/assets/icon/download.svg'
+import MenuBox from './menu'
 
 function Header() {
     const [position, setPosition] = useState(window.scrollY)
@@ -68,19 +69,22 @@ function Header() {
                         <ul className="nav_btn">
                             <li className='btn_link' ><a href={`/`}>Works</a></li>
                             <li className='btn_link'><a href={`/about`}>About me</a></li>
-                            <li className='btn_link'><a href={`/about`}>下載履歷</a></li>
+                            <li className='btn_link'><a href=''>下載履歷</a></li>
                         </ul>
                     </nav>
                     {/* nenu  */}
-                    <div className="user">
-                        <figure className="menu_box">
-                            <img src={Menu} alt="" />
-                        </figure>
-                    </div>
-                    <div className="popup-content">
-                        {/* <UnLogin /> */}
+                    <div className="user ">
+                        <div className="hover-trigger">
+                            <figure className="menu_box">
+                                <img src={Menu} alt="" />
+                            </figure>
+                        </div>
+                        <div className="popup-content">
+                            <MenuBox />
 
+                        </div>
                     </div>
+
                 </div>
 
 

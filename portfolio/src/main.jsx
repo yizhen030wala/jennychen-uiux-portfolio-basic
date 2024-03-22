@@ -4,6 +4,11 @@ import ReactDOM from 'react-dom/client'
 
 import Home from '../src/pages/home/index'
 import About from '../src/pages/about/about'
+import Work1 from '../src/pages/works/work1'
+import Work2 from '../src/pages/works/work2'
+import Work3 from '../src/pages/works/work3'
+import Work4 from '../src/pages/works/work4'
+
 
 import {
   createBrowserRouter,
@@ -18,6 +23,22 @@ const router = createBrowserRouter([
   {
     path: "about",
     element: <About/>,
+  },
+  {
+    path: "reto",
+    element: <Work1/>,
+  },
+  {
+    path: "rallway",
+    element: <Work2/>,
+  },
+  {
+    path: "vote",
+    element: <Work3/>,
+  },
+  {
+    path: "viewsonic",
+    element: <Work4/>,
   },
 ]);
 

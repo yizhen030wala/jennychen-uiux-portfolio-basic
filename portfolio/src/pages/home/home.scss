@@ -101,9 +101,10 @@ main {
                 }
 
                 .left {
-                    width: 60% ;
+                    width: 60%;
                     overflow: hidden;
                     height: 100%;
+
                     img {
                         object-fit: cover;
                         height: 100%;
@@ -122,6 +123,7 @@ main {
 
                         h4 {
                             @include h4_desktop;
+                            font-size: 16px;
                             font-weight: 350;
                         }
 
@@ -147,6 +149,10 @@ main {
                         @include text_btn_big;
                         border-radius: $border_radius_10px;
                         font-size: 30px;
+                        text-align: center;
+                        color: $color-white;
+                        font-weight: 400;
+
                     }
                 }
             }
@@ -161,7 +167,7 @@ main {
     main {
         .hero {
             padding: 50px 16px !important;
-            
+
             .wrap {
                 .text_wrap {
                     h1 {
@@ -172,8 +178,8 @@ main {
                         background-image: url('../../assets/images/textPhone.png');
                         background-size: cover;
                         height: 12vh;
-                        
-                        
+
+
                     }
 
                 }

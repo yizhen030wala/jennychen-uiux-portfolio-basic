@@ -1,0 +1,165 @@
+@import "../../assets/scssRule/all.scss";
+@import "../../assets/scssRule/rule.scss";
+
+// ===============================================
+main.portfolio {
+    @include showFlex_column;
+    @include center;
+    padding: 10vh 20vh;
+    gap: 3rem;
+
+    .port_content {
+        @include showFlex_column;
+        gap: 3rem;
+
+
+
+        .porject_info {}
+
+        p {
+            font-size: 24px;
+        }
+
+        ol {
+            li {
+                font-size: 24px;
+
+            }
+        }
+
+        h2 {
+            @include h3_desktop;
+        }
+
+        img {
+            border-radius: $border_radius_15px;
+        }
+
+        .thanks {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+
+    }
+
+    .other_project {
+        margin-top: 10vh;
+        @include showFlex_row;
+        gap: 3rem;
+        width: 100%;
+
+        .go_back,
+        .next {
+            @include size(50%, 30vh);
+            // justify-content: start;
+            @include row-center;
+            border: none;
+            border-radius: $border_radius_15px;
+            background-color: $color-gray;
+            transition: 0.3s;
+            overflow: hidden;
+
+
+            &:hover {
+                @include shadow;
+
+            }
+
+            .wrap {
+                @include showFlex_column;
+                padding: 20px;
+                text-align: left;
+                width: 80%;
+                gap: 2rem;
+
+                h2 {}
+
+                p {}
+
+            }
+
+            figure {
+                width: 80%;
+
+
+            }
+
+            img {
+                width: 125%;
+            }
+
+        }
+    }
+}
+
+// ===================
+main.portfolio.png {
+    padding: 10vh 0vh;
+
+    .port_content {
+        gap: 0rem;
+        overflow: hidden;
+        border-radius: $border_radius_15px;
+
+        img {
+            border-radius: 0px;
+        }
+    }
+
+    .other_project {
+        padding: 0vh 10vh;
+    }
+}
+
+// ==============RWD===========================
+@media screen and (max-width: 1024px) {
+    main.portfolio {
+        padding: 50px 16px !important;
+        margin-top: 6vh;
+
+
+        .port_content {
+
+            .porject_info {}
+
+            p {
+                font-size: 14px;
+            }
+
+            ol {
+                li {
+                    font-size: 14px;
+
+                }
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            img {}
+
+        }
+
+        .other_project {
+            @include showFlex_column;
+
+            .go_back,
+            .next {
+                width: 100%;
+                height: 30%;
+
+                .wrap {
+                    h2 {}
+
+                    img {}
+
+                }
+
+                img {}
+
+            }
+        }
+    }
+}

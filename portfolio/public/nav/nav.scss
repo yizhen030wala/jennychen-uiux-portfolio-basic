@@ -121,27 +121,26 @@
                 }
             }
 
-            .popup-content {
-                display: none;
-                position: absolute;
-                top: 110%;
-                right: 0;
-                z-index: 999;
 
+        }
 
+        .popup-content {
+            display: none;
+            position: absolute;
+            top: 110%;
+            right: 0;
+            z-index: 999;
+        }
 
-            }
+        .hover-trigger:hover+.popup-content,
+        .popup-content:hover {
+            display: block;
 
-            .hover-trigger:hover+.popup-content,
-            .popup-content:hover {
-                display: block;
-
-            }
         }
 
 
 
-
     }
+    
 
 }
