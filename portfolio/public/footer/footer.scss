@@ -11,6 +11,8 @@ footer {
     background-color: $color_black;
     justify-content: space-around;
 
+
+
     .mail_wrap {
         color: $color-white;
 
@@ -28,8 +30,15 @@ footer {
 
         .logo {
             @include size(50px, 50px);
-            background-color: $color-gray;
+            background-color: $color-white;
             border-radius: $border_radius_10px;
+            @include center;
+
+            &:hover {
+                background-color: $color-gray;
+
+            }
+
         }
     }
 }

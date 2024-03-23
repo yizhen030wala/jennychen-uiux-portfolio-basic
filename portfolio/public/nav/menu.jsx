@@ -8,7 +8,7 @@ const menu = () => {
                 <ul className="menu">
                     <li><a href={`/`}>Works</a></li>
                     <li><a href={`/about`}>About me</a></li>
-                    <li><a href=''> 下載履歷</a></li>
+                    <li><a href='https://drive.google.com/file/d/1yqwU2URFxbTO7FR5rEQI93hwR_yQrsZ4/view?usp=sharing' target='_blank'> 下載履歷</a></li>
                 </ul>
 
 

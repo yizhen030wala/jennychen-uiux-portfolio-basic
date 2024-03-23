@@ -12,9 +12,54 @@ main.portfolio {
         @include showFlex_column;
         gap: 3rem;
 
+        .top {
+            background-image: url('../../assets/images/RETO\ CH/cover1.png');
+            background-size: cover;
+            position: relative;
+            height: 50vh;
+            width: 100%;
+            @include center;
 
 
-        .porject_info {}
+            .porject_info {
+                position: absolute;
+                bottom: -50px;
+                @include shadow;
+                padding: 20px;
+                border-radius: $border_radius_20px;
+                width: 70%;
+                background-color: $color_white;
+
+
+                .col {
+
+                    @include showFlex_column;
+                    gap: 20px;
+
+                    .row {
+                        @include showFlex_row;
+                        justify-content: space-between;
+
+                        .tag_wrap {
+                            @include showFlex_row;
+
+                            gap: 10px;
+
+                            .tag {
+                                padding: 10px;
+                                font-size: 14px;
+                                background-color: $color-gray;
+                                border-radius: $border_radius_10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+
 
         p {
             font-size: 24px;
@@ -112,6 +157,81 @@ main.portfolio.png {
     }
 }
 
+// ===================
+main.portfolio.reto {
+    .text_wrap {
+        @include showFlex_column;
+        gap: 4rem;
+
+        h2{
+            color: #3D9D35;
+        }
+
+        hr {
+            opacity: 50%;
+        }
+
+        img {
+            @include shadow;
+            border-radius: 65px;
+
+            @media screen and (max-width: 1024px) {
+                border-radius: 15px;
+
+            }
+        }
+
+        img.design {
+            box-shadow: none;
+            border-radius: 0px;
+        }
+
+        .reto_img_wrap {
+            border-radius: 65px;
+            overflow: hidden;
+
+            img {
+                border-radius: 0px
+            }
+        }
+    }
+
+    .box_wrap {
+        @include showFlex_row;
+        justify-content: space-between;
+        gap: 30px;
+
+        .box {
+            h2 {
+                font-size: 24px;
+                line-height: 250%;
+
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 150%;
+            }
+
+            gap: 20px;
+            padding: 20px;
+            width: 50%;
+            border: 1px solid $color_deep_gray3;
+            border-radius: $border_radius_15px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            @include showFlex_column;
+
+            .box {
+                width: 100%;
+
+            }
+
+        }
+    }
+}
+
 // ==============RWD===========================
 @media screen and (max-width: 1024px) {
     main.portfolio {
@@ -121,7 +241,48 @@ main.portfolio.png {
 
         .port_content {
 
-            .porject_info {}
+
+            .top {
+                background-image: url('../../assets/images/RETO\ CH/cover1.png');
+                background-size: cover;
+                position: relative;
+                height: 55vh;
+                width: 100%;
+                @include center;
+
+
+                .porject_info {
+                    position: absolute;
+                    bottom: -20px;
+                    @include shadow;
+                    padding: 20px;
+                    border-radius: $border_radius_20px;
+                    width: 90%;
+                    background-color: $color_white;
+
+
+                    .col {
+
+                        @include showFlex_column;
+                        gap: 10px;
+
+                        .row {
+                            @include showFlex_column;
+                            justify-content: space-between;
+                            gap: 10px;
+
+                            .col {
+                                line-height: 120%;
+                            }
+
+                            .tag_wrap {
+                                flex-wrap: wrap;
+                            }
+                        }
+                    }
+                }
+
+            }
 
             p {
                 font-size: 14px;
