@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 // import { Link } from 'react-router-dom'; //物件內用到連結跳轉就需要放
 import './nav.scss'
 // import Logo from '../../src/assets/images/navLogo.png'
-import Menu from '../../src/assets/icon/menu.svg'
+import Menu from '../../assets/icon/menu.svg'
 // import UnLogin from '../ShowUnlogin/ShowUnlogin.jsx'
 // import Download from '../../src/assets/icon/download.svg'
 import MenuBox from './menu'

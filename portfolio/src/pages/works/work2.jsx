@@ -1,7 +1,7 @@
 // rallway
-import Footer from '../../../public/footer/footer'
 import './works.scss'
-import Header from '../../../public/nav/nav'
+import Footer from '../footer/footer'
+import Header from '../nav/nav'
 
 //img
 import RETO from '../../assets/images/RETO CH/cover2.png'

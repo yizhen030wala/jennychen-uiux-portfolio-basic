@@ -1,9 +1,9 @@
 // import React from 'react'
 import './footer.scss'
 //img
-import Behance from '../../src/assets/icon/Behance.svg'
-import Medium from '../../src/assets/icon/Medium.svg'
-import LinkedIn from '../../src/assets/icon/LinkedIn.svg'
+import Behance from '../../assets/icon/Behance.svg'
+import Medium from '../../assets/icon/Medium.svg'
+import LinkedIn from '../../assets/icon/LinkedIn.svg'
 
 
 

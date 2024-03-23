@@ -1,5 +1,5 @@
-import Footer from '../../../public/footer/footer'
-import Header from '../../../public/nav/nav'
+import Footer from '../footer/footer'
+import Header from '../nav/nav'
 import './about.scss'
 
 // img

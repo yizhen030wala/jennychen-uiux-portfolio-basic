@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Header from '../../../public/nav/nav'
+import Header from '../nav/nav'
 import './home.scss'
-import Footer from '../../../public/footer/footer'
+import Footer from '../footer/footer'
 
 
 //img
